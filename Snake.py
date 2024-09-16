@@ -265,7 +265,7 @@ while True :
         snake.pop()
 
     #If snake go over the limit of the window -> game over
-    if snake_position[0] > x_window or snake_position[1] > y_window or snake_position[0] < 0 or snake_position[1] < 0:
+    if snake_position[0] >= x_window or snake_position[1] >= y_window or snake_position[0] < 0 or snake_position[1] < 0:
         game_over(game_window, score, record)
     #If the snake touche himself -> game over
     if snake_position in snake[1:]:
